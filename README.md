@@ -1,0 +1,2 @@
+# Blog-anime
+This project is a website with an anime blog theme. On our page, you will find different sections such as the image gallery, about us, login, contact, in addition to the home page. Our website is carefully designed with an attractive and easy to navigate interface, created with HTML and CSS.
