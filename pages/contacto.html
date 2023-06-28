@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Equipo 5" />
+    <meta
+      name="description"
+      content="Blog de animes creado para compartir novedades sobre series antiguas y actuales del mundo del anime"
+    />
+    <meta
+      name="keywords"
+      content="anime, Naruto, One Piece, Dragon Ball Z/GT, Dragon Quest - Fly, Evangelion, Bokurano, Fruits Basket, Suzumiya Haruhi, Slayers, Wotaku ni Koi wa Muzukashii, Plastic Memories, Saint Seiya, caballeros del zodiaco, Ranma 1/2 Candy Candy, Cowboy Bebop, Slayers, Saint Seiya,"
+    />
+       <link rel="shortcut icon" href="/img/faviconBlog.png" type="image/x-icon">
+    <title>Blog de animes</title>
+
+    <!-- Llamado al css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Iconos de https://fontawesome.com/icons/ -->
+    <script
+      src="https://kit.fontawesome.com/2e18571cb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Inicio del header -->
+    <header>
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+            <figure class="w-75">
+              <img
+                class="img-fluid"
+                src="/img/logo_blog_anime.png"
+                alt="Logo del blog"
+              />
+            </figure>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barranavegacion"
+            aria-controls="barranavegacion"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="barranavegacion">
+            <ul
+              class="fuente navbar-nav me-auto mb-2 my-2 my-lg-0 navbar-nav-scroll navbar-navegacion"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link link_hover active" aria-current="page" href="/pages/contacto.html"
+                  >Contacto</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-orange m-lg-2">
+              <a
+                class="nav-link"
+                href="/pages/login.html"
+                >Login</a
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary m-lg-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalRegistro"
+            >
+              Suscribirte
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Secciòn del main -->
+
+    <main id="contacto" class="pb-5">
+       <section class="title-galery container-fluid">
+          <div class="container text-center py-5">
+              <h1 class="display-1 fst-italic fw-bolder text-light ">Contacto</h1>
+          </div>               
+      </section>
+      <section class="container text-light">
+        <div class="row mt-5">
+          <div class="col-12">
+              <h2 class="fst-italic text-center">Comunicate con nosotros</h2>
+              <div class="card bg-light shadow py-3">
+                   <div>
+                      <div class="row text-center text-primary">
+                        <div class="col-lg-4 col-md-12">                  
+                         <h4 class="card-title comunicate"> <img src="/img/whatsapp.svg" alt="logo de whatsapp"> +540381-156393820</h4>
+                       </div>
+                        <div class="col-lg-4 col-md-12">
+                           
+                         <h4 class="card-title comunicate"> <img src="/img/telephone-fill.svg" alt="imagen de telefono"> +540381-4611999</h4>
+                       </div>
+                        <div class="col-lg-4 col-md-12 card-wrapper">
+                            
+                         <h4 class="card-title comunicate"> <img src="/img/sobre-correo.svg" alt="imagen de correo"> puenayan1@gmail.com</h4>
+                       </div>
+                        
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="container pt-1">
+        <h2 class="fst-italic mb-2 mt-3 text-light">Si deseas contactar con "Blog anime" rellena este formulario.</h2>
+      </section>
+        <section class="container-fluid">
+          <div class="position-relative ">
+                <figure class="ms-5">
+                    <img src="/img/plastic_memori2.webp" class="img-fluid img-height rounded"  alt="serie naruto,personaje itachi">
+                </figure>
+                <div class="position-absolute" id="form-contacto" >
+                   <form class="bg-light shadow bg-gradient bg-light bg-gradient fuente video-height">
+                     <div class="p-5">
+                       <div class="mb-1">
+                         <label for="nombre" class="form-label"
+                           >Ingresa tu nombre
+                           <span class="text-danger">*</span></label
+                         >
+                         <input
+                           type="text"
+                           id="nombre"
+                           class="form-control"
+                           required="requered"
+                           placeholder="Perez Juan"
+                         />
+                       </div>
+                       <div class="mb-3">
+                         <label for="email" class="form-label"
+                           >Ingresa tu email<span class="text-danger">*</span></label
+                         >
+                         <input
+                           type="text" 
+                           id="email"
+                           class="form-control"
+                           placeholder="Perez_Juan@example.com"
+                           required="requered"
+                         />
+                       </div>
+                       <div class="mb-3">
+                         <textarea
+                           class="w-100 form-control"
+                           name="consulta"
+                           rows="4"
+                           placeholder="Escribe tu consulta"
+                         ></textarea>
+                       </div>
+                       <button type="submit" class="btn btn-orange">Enviar</button>
+                     </div>
+                   </form>
+
+                </div>                     
+           </div>
+        </section>
+      <section class="container my-5">
+        <div class="row text-light">       
+          <article class="col-sm-12 col-md-12 mt-sm-3">
+            <h3 class="fst-italic mt-md-2 fw-bolder text-center">Te esperamos en nuestras oficinas</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14241.909793906336!2d-65.22422259218754!3d-26.824762500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c168a74aa5f%3A0xf34cf0dff29961ee!2sLegion%20Comics!5e0!3m2!1ses-419!2sar!4v1663365883316!5m2!1ses-419!2sar"
+              class="w-100 rounded"
+              height="300px"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!--  modal suscripcion -->
+    <div
+      class="modal fade"
+      id="modalRegistro"
+      tabindex="-1"
+      aria-labelledby="modalRegistroLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="modal-dialog fuente">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalRegistroLabel">
+              Suscribite a nuestro blog
+            </h5>
+            <button
+              type="button"
+              class="btn-close alert-dismissible"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- formulario  suscripcion -------------------------------------------------------------------------->
+            <div class="signup-form-container">
+              <form role="form" id="register-form" autocomplete="off">
+                <div class="form-header"></div>
+                <div class="form-body">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                      </div>
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Usuario"
+                      />
+                    </div>
+                    <span class="help-block" id="error"></span>
+                  </div>
+                  <br />
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                      </div>
+                      <input
+                        name="email"
+                        type="text"
+                        class="form-control"
+                        required
+                        placeholder="Email"
+                      />
+                    </div>
+                    <span class="help-block" id="error"></span>
+                  </div>
+                  <br />
+                  <div class="row">
+                    <div class="form-group col-lg-6">
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <span class="glyphicon glyphicon-lock"></span>
+                        </div>
+                        <input
+                          name="password"
+                          id="password"
+                          type="password"
+                          class="form-control"
+                          required
+                          placeholder="Contraseña"
+                        />
+                      </div>
+                      <span class="help-block" id="error"></span>
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <span class="glyphicon glyphicon-lock"></span>
+                        </div>
+                        <input
+                          name="cpassword"
+                          type="password"
+                          class="form-control"
+                          required
+                          placeholder="Repetir contraseña"
+                        />
+                      </div>
+                      <span class="help-block" id="error"></span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+
+                <div class="form-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="submit" class="btn btn-orange" data-bs-target="/contacto">
+                    <span class="glyphicon glyphicon-log-in"></span> Suscribirse
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!---------------------------------------------------------------->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- inicio de footer -->
+   <footer class="container-fluid bg-dark bg-gradient text-secondary">
+      <div class="container pt-2">
+        <div class="box-footer text-sm-center">
+          <div class="row my-2">
+            <div class="col-sm-12 col-md-7 col-lg-2 px-1 text-sm-center p-sm-0">
+              <div class="w-75 mx-auto">
+                <a href="/index.html">
+                  <figure>
+                    <img
+                      src="/img/logo_blog_anime.png"
+                      class="img-fluid logo"
+                      alt="Logo del blog"
+                    />
+                  </figure>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-5 col-lg-3 px-1 text-sm-center p-sm-0">
+              <ul class="list-unstyled">
+                <li class="nav-item"><h6 class="text-light">Navegación</h6></li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link link_hover"
+                    href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/galeria.html"
+                    >Galeria de imagenes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/nosotros.html"
+                    >Acerca de nosotros</a
+                  >
+                </li>
+                <li class="nav-item link_hover">
+                  <a class="nav-link active link_hover" aria-current="page" href="/pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/login.html"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-7 col-lg-4 px-sm-3 pb-2 mt-md-3">
+              <div>
+                <h6
+                  class="text-light text-lg-center mb-3 px-md-5 ps-xs-3 px-lg-0"
+                >
+                  Seguinos en nuestras redes sociales
+                </h6>
+                <div
+                  class="padding-icons display-flex px-lg-0 d-flex flex-row -justify-content-lg-around justify-content-md-around justify-content-sm-around"
+                >
+                  <a
+                    href="https://discord.com/channels/@me"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-discord p-1 mt-1 fs-2"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-facebook p-1 mt-1 fs-2"></i> </a
+                  ><a
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    id="center-instagram"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i
+                      class="justify-content-lg-center fa-brands fa-square-twitter p-1 mt-1 fs-2"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-square-instagram p-1 mt-1 fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-12 col-md-5 col-lg-3 px-1 mt-md-3 mt-lg-0 text-sm-center p-sm-0"
+            >
+              <h6 class="text-light ps-lg-1">Unite</h6>
+              <div
+                class="padding-icons display-flex flex-lg-column d-md-flex flex-md-row justify-content-md-around pt-md-3 d-sm-flex flex-sm-row justify-content-sm-around py-sm-3"
+              >
+                <a target="_blank" href="https://play.google.com/store/apps">
+                  <figure>
+                    <img
+                      src="/img/badge-apple-store.svg"
+                      alt="apple-store"
+                      width="120"
+                      height="auto"
+                    />
+                  </figure>
+                </a>
+                <a target="_blank" href="https://www.apple.com/la/app-store/">
+                  <figure>
+                    <img
+                      src="/img/google-play-badge-bb.svg"
+                      alt="google-play"
+                      width="120"
+                      height="auto"
+                    />
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascrip de bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

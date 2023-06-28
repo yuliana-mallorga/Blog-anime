@@ -1,0 +1,444 @@
+/* inportacion de la letra oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+/* color de fondo de la pàgina en general */
+
+
+
+  .title-galery{
+     background: rgb(236,28,25);
+background: linear-gradient(90deg, rgba(236,28,25,0.9500175070028011) 10%, rgba(253,66,29,1) 59%, rgba(252,145,69,1) 100%);
+}
+  .galery{
+     background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #141431 0%,
+      #240f24 46%,
+      #1e1d1b 100%
+    );
+  }
+  
+ 
+main{
+  padding-top: 126px;
+}
+/* css del navbar */
+.fuente{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-size: large;
+  }
+
+
+.box-phrase {
+  width: 60%;
+  top: 10%;
+  left: 21%;
+  padding: 15px;
+  margin: 0 auto;
+} 
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}   /* position: relative; */
+
+.form-signin .form-control:focus {
+  z-index: 2;
+} 
+
+ .form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 5;
+  border-bottom-left-radius: 5;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 5;
+  border-top-right-radius: 5;
+}  
+
+/* css de botones  */
+.btn-orange{
+    background-color: #F57647;
+    color: white;
+  }
+  .btn-orange:hover {
+    background-color: #F34709;
+    color: white;
+    border-color: #F34709;
+  }
+
+
+/* css de slider, pàgina principal  y entradas */
+ .cardImage{
+    height:200px;
+ }
+
+
+ .cabecera{
+    font-size: 400%;
+    font-weight: bold;
+ }
+ .imgPortada{
+    filter:brightness(50%);
+ }
+
+.btn-orange{
+background-color: #f57647;
+color: white;
+}
+
+.orange{
+    background-color: #f57647;
+    color: white;
+    }
+    
+.btn-orange:hover {
+background-color: #f34709;
+color: white;
+border-color: #f34709;
+}
+
+.pagination-color{
+    color:#501c09;
+}
+
+
+.pagination-color:hover{
+    color:#501c09;
+}
+.pagination-color::selection {
+    color:#501c09;
+}
+
+
+#listaCategorias a{
+    
+    transition:transform 250ms;
+    color: black;
+    text-decoration:none;
+}
+
+#listaCategorias a:hover{
+    
+    transform:translateX(20px);
+}
+#publicidad{
+    max-width: 75%;
+    max-height:auto;
+}
+
+#publicidad:hover{
+    filter:drop-shadow(8px 8px 10px gray)
+}
+
+.subImagen{
+    font-weight: bold;
+}
+
+.avatar{
+    width:100px;
+    height:auto;
+}
+
+/*  fin del css de slider, pàgina principal  y entradas */
+
+
+
+  /* css de galeria de imagenes */
+   
+.heightSlider{
+  height: 750px;
+}
+
+  .box-pictures{
+    background-color: #e99700;
+    background-image: linear-gradient(160deg, #f4f4f4 0%, #f4f4f4 100%);
+    box-shadow: 5px 5px 18px gray;
+    
+  }
+  
+   .figure-wrap {
+    width: 25%;
+    
+  }
+   .efectofoto{     
+       border-radius: 5%;
+    box-shadow: 5px 5px 18px grey;
+     
+   }
+
+
+  .efectofoto:hover{
+    position: relative;
+    top: 5px;
+    right: 7px;
+    filter: drop-shadow(10px 10px 18px gray);
+    filter: contrast(130%);
+    scale: 1.1;
+    transition-duration: 1s;
+    cursor: zoom-in;
+  }
+
+
+
+
+
+
+/* css login */
+.wrap-picture{
+  overflow: hidden;
+
+}
+
+.login-picture{
+  object-fit: cover;
+  height: 618px;  
+  box-shadow: 0 0 15px 9px #00000096;
+}
+.login-reg-panel{
+  margin:auto;
+  height:750px;
+  background-color: gray;
+  margin-bottom: 100px;
+}
+
+#login{
+  background-image: linear-gradient(
+      43deg,
+      #141431 0%,
+      #240f24 46%,
+      #1e1d1b 100%
+    );
+}
+
+/* css suscripcion a noticias en el index */
+#newletter{
+  background: rgb(236,28,25);
+background: linear-gradient(90deg, rgba(236,28,25,0.9500175070028011) 10%, rgba(253,66,29,1) 59%, rgba(252,145,69,1) 100%);
+}
+
+/* css contacto */
+
+#form-contacto{
+  width: 500px;
+  height: auto;
+  top: 10%;
+  right: 15%;
+}
+
+ #contacto{
+  background-image: url(https://images4.alphacoders.com/771/771322.jpg);
+} 
+
+.comunicate:hover{
+  color: red;
+}
+/* css de la pagina acerca de nosotros */
+
+.letter-first::first-letter {
+  font-size: 300%;
+  font-style: italic;
+  background-color: rgba(240, 128, 128, 0.792);
+  color: #F34709;
+  letter-spacing: 3px;
+  margin-left: 20px;
+}
+
+.space-letter::first-letter{
+   font-size: 200%;
+  margin-left: 20px;
+}
+.letter-first::first-line{
+   text-transform: uppercase;
+}
+#second-page{
+  background-image: url(https://fondosmil.com/fondo/4644.png);
+}
+/* css de las imagenes  del equipo seccion nosotros*/
+
+.card-wrapper:hover .imagen-filter {
+  filter: contrast(100%);
+  scale: 1.1;
+}
+.contenedor-img{
+   overflow: hidden;
+}
+.imagen-filter{
+  transition: all 0.5s;
+  filter: brightness(38%);
+}
+
+
+
+/*inicio del css del footer */
+footer{
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+.logo{
+  filter:drop-shadow(23px 23px
+        48px #0d6efd)    
+}
+
+/* hovers del footer */
+.logo:hover{  
+filter: contrast(142%);
+} 
+
+.link_hover:hover{
+  font-weight: bold;
+  color: white;
+   font-family: 'Oswald', sans-serif;
+}
+/* fin del css del footer */
+
+/*css de la pagina 404*/
+.container-page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main-content{
+  flex: 1;
+  background-color: #000;
+}
+#paginaError{
+  background-image: url();
+}
+.picture-error{
+  object-fit: cover;
+  height: 500px;
+}
+
+.error{
+  width: 210px;
+  height: auto;
+  bottom: 0;
+  right: 5%;
+}
+
+.text-position{
+ top: 22%;
+  left: 5%;
+}
+
+
+
+/* Inicio del media query del slider, pagina principal y login */
+
+ @media all and (max-width: 576px){
+    .slider-responsive{
+        height:250px;
+        object-fit: cover;
+    }
+    .heightSlider{
+      height:250px !important;   
+        object-fit: cover;
+    }
+    .cabecera{
+        font-size: 50%;
+        font-weight: bold;
+     }
+    #publicidad{
+        display:none;
+    }
+    .avatar{
+        width:50px;
+        height:auto;
+    }
+
+ }
+
+
+/* inicio del media query de formulario login */
+
+ @media all and (min-width:50px) and (max-width: 850px) {
+ .form-signin{  
+  height: auto;
+  top: 35%;
+  left: 20%;
+  padding: 2px 2px 0px 2;
+  margin: 0 auto;
+  
+  }
+
+  #form-login{
+    width: 100%;
+  }
+  .ghost{
+    display: none;
+  }
+
+} 
+
+
+/* inicio de media query del footer */
+ @media all and (min-width:50px) and (max-width: 576px) {
+ .box-footer{
+  width: auto;
+  margin: auto;
+  text-align: center;
+ }
+ .display-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+
+.justify-icon-footer{
+  justify-content: space-around;
+
+ } 
+ 
+} 
+
+
+ @media all and (min-width:375px) and (max-width: 765px) {
+  .padding-icons{ padding: 1em; 
+  }
+}
+ 
+/* fin del media query de contacto */ 
+ @media all and (min-width:75px) and (max-width: 960px) {
+ 
+  .img-height{
+  height: 460px;
+  filter: blur(18px);
+ }
+
+#form-contacto{
+  width: 75%;
+  top: 7%;
+  left: 15%;
+  opacity: 80%;
+ }
+}
+
+/*media query del video*/
+
+ @media all and (min-width:75px) and (max-width: 780px) {
+ 
+  .video-height{
+  object-fit: cover;
+  height: 460px;
+}
+
+.whidth-form{
+  width: 90%;
+  left:5%;
+}
+
+}

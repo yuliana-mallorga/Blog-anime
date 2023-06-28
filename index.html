@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Equipo 5" />
+    <meta
+      name="description"
+      content="Blog de animes creado para compartir novedades sobre series antiguas y actuales del mundo del anime"
+    />
+    <meta
+      name="keywords"
+      content="anime, Naruto, One Piece, Dragon Ball Z/GT, Dragon Quest - Fly, Evangelion, Bokurano, Fruits Basket, Suzumiya Haruhi, Slayers, Wotaku ni Koi wa Muzukashii, Plastic Memories, Saint Seiya, caballeros del zodiaco, Ranma 1/2 Candy Candy, Cowboy Bebop, Slayers, Saint Seiya,"
+    />
+       <link rel="shortcut icon" href="/img/faviconBlog.png" type="image/x-icon">
+
+    <title>Blog de animes</title>
+
+    <!-- Llamado al css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Iconos de https://fontawesome.com/icons/ -->
+    <script
+      src="https://kit.fontawesome.com/2e18571cb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Inicio del header -->
+    <header>
+      <nav class="navbar navbar-dark bg-dark bg-gradient navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+            <figure class="w-75">
+              <img
+                class="img-fluid"
+                src="/img/logo_blog_anime.png"
+                alt="Logo del blog"
+              />
+            </figure>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barranavegacion"
+            aria-controls="barranavegacion"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="barranavegacion">
+            <ul
+              class="fuente navbar-nav me-auto mb-2 my-2 my-lg-0 navbar-nav-scroll navbar-navegacion"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fuente" href="/pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-orange m-lg-2">
+              <a class="nav-link"  href="/pages/login.html"
+                >Login</a
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary m-lg-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalRegistro"
+            >
+              Suscribirte
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Secciòn del main -->
+
+    <main class="galery">   
+<!-- Secciòn del baner principal -->
+       <div id="bannerPrincipal" class="carousel slide" data-bs-ride="carrusel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/movie.webp" class="d-block w-100 slider-responsive imgPortada" alt="Dragon Ball Super" height="900">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="cabecera">La película Dragon Ball Super: Super Hero llegará a Latinoamérica en agosto</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/stream.jpg" class="d-block w-100 slider-responsive" alt="Stream publicidad" height="900">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="cabecera">¿Cual es el contenido de anime de cada plataforma?</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/conv.jpg" class="d-block w-100 slider-responsive " alt="publicidad de convencion" height="900">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerPrincipal" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerPrincipal" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <section class="container bg-light p-2">
+    <!--   Primer columna --------------------------------------------------------------------------------------------->
+      <div class="row m-lg-5 m-2 m-md-3">
+        <div class="col-lg-6 col-sm-12">
+          <h2 class="mb-3 text-center"> Ultimas entradas</h2>
+          <div class="card my-5 shadow-lg" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="img/ss.jpg" class="img-fluid rounded-start p-2 w-100"alt="Saint Seiya nueva temporada">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Saint Seiya: Knights of the Zodiac tendrá segunda temporada en Crunchyroll</h5>
+                  <p class="card-text text-justify">La adaptación CGI de Los Caballeros del Zodiaco estrenará el arco Batalla por el Santuario en Crunchyroll a finales de verano y en simulcast.</p>
+                  <p class="card-text"><small class="text-muted">Comentado por ultima vez hace 10 min</small></p>
+                  <a href="/pages/One.html" class="btn btn-orange">Ver mas</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+           <div class="card my-5 shadow-lg" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="img/dbs.jpg" class="img-fluid rounded-start p-2 w-100"alt="Dragon Ball Z trivia">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">TRIVIA : Cuanto sabes de DBZ ? </h5>
+                  <p class="card-text">Demuestra que tan fanatico eres de la popular obra de Akira Toriyama, responde estas 10 preguntas y participa por alguno de nuestros premios.</p>
+                  <p class="card-text"><small class="text-muted">Comentado por ultima vez hace 3 min</small></p>
+                  <a href="/pages/404.html" class="btn btn-orange">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-5 shadow-lg" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="img/naruto.png" class="img-fluid rounded-start p-2 w-100 "alt="Naruto nuevos personajes">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Los nuevos personajes de Naruto Shippuden: Ultimate Ninja Storm Revolution</h5>
+                  <p class="card-text">CyberConnect y Namco Bandai preparan una nueva entrega de peleas y aventuras con uno de los personajes más populares del anime actual en occidente</p>
+                  <p class="card-text"><small class="text-muted">Comentado por ultima vez hace 30 min</small></p>
+                  <a href="/pages/404.html" class="btn btn-orange">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Grupo de Botones de paginación --------------------------------------------------------------------->
+          <nav aria-label="paginacionBlog">
+            <ul class="pagination  justify-content-center my-5">
+              <li class="page-item disabled"><a class="page-link" href="/pages/404.html">Previous</a></li>
+              <li class="page-item "><a class="page-link btn-orange" href="/pages/404.html">1</a></li>
+              <li class="page-item"><a class="page-link pagination-color" href="/pages/404.html">2</a></li>
+              <li class="page-item"><a class="page-link pagination-color" href="/pages/404.html">3</a></li>
+              <li class="page-item"><a class="page-link pagination-color" href="/pages/404.html">Next</a></li>
+            </ul>
+          </nav>
+
+        </div>
+        <!-- Segunda columna ------------------------------------------------------------------------------>
+        <div class="col-lg-6 col-sm-12 ">
+          <h2 class="mb-3 text-center"> Buscar Posts</h2>
+        <!-- Formulario de busqueda ----------------------------------------------------------------------->
+          <form class="shadow-lg p-2 mt-5 mb-3 rounded-3 mx-auto w-75">
+            <div class="my-2 mx-auto w-75">
+              <label for="exampleInputEmail1" class="col-form-label-lg">Por tema</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="my-2 mx-auto w-75">
+              <label for="exampleInputPassword1" class="col-form-label-lg">Por autor</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="w-75 mx-auto my-2">
+              <button type="submit" class="btn btn-orange">Buscar</button>
+            </div>
+
+          </form>
+
+          <h2 class="mb-3 text-center"> Por categorías </h2>
+          <!-- Lista de Categorias ------------------------------------------------------------------------>
+
+          <div class=" mx-auto shadow-lg w-75">   
+
+            <ul id="listaCategorias" class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Para empezar</a> 
+                <span class="badge orange rounded-pill">31</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Accion</a>
+                <span class="badge orange rounded-pill">22</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Ciencia ficción</a>
+                <span class="badge orange rounded-pill">15</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Suspenso y terror</a>
+                <span class="badge orange rounded-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Aventuras</a>
+                <span class="badge orange rounded-pill">28</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Deportes</a>
+                <span class="badge orange rounded-pill">16</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Comedia</a>
+                <span class="badge orange rounded-pill">19</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Romance</a>
+                <span class="badge orange rounded-pill">8</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Drama</a>
+                <span class="badge orange rounded-pill">7</span>
+              </li><li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Recomendados</a>
+                <span class="badge orange rounded-pill">15</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/pages/404.html">Lo mejor del 2021 - actualidad</a>
+                <span class="badge orange rounded-pill">31</span>
+              </li>
+            </ul>
+          </div>
+          <div class="my-5 text-center ">
+            <a href="/pages/404.html">
+              <img class="rounded-3 shadow-lg" id="publicidad" src="/img/publi.png" alt="Publicidad">
+            </a>           
+          </div>
+        </div>        
+    </div>     
+    </section>
+      <section class="container" id="newletter">
+          <div class="row">
+                <div class="col-md-12 col-lg-6 p-3">
+                   <h4 class="display-3">
+                      Suscríbete a nuestra Newsletter
+                    </h4>
+                  <p class="lead">Tendrás ofertas exclusivas y avisos de nuestras últimas
+                        novedades. No te lo pierdas!</p>
+                </div>
+                     <div class="col-md-12 col-lg-6">
+                   <form class="bg-light shadow bg-gradient bg-light bg-opacity-10">
+                     <div class="p-5">
+                       <div class="mb-1">
+                         <label for="nombre" class="form-label"
+                           >Ingresa tu nombre
+                           <span class="text-danger">*</span></label
+                         >
+                         <input
+                           type="text"
+                           id="nombre"
+                           class="form-control"
+                           placeholder="Perez Juan"
+                         />
+                       </div>
+                       <div class="mb-3">
+                         <label for="email" class="form-label"
+                           >Ingresa tu email<span class="text-danger">*</span></label
+                         >
+                         <input
+                           type="text" 
+                           id="email"
+                           class="form-control"
+                           placeholder="Perez_Juan@example.com"
+                           required="requered"
+                         />
+                       </div>
+                       <a href="/pages/404.html" class="btn btn-orange">Suscribirse</a>
+                     </div>
+                   </form>
+
+                   </div>              
+                </div>
+      </section>
+             
+    </main>
+
+    <!--  modal suscripcion -->
+    <div
+      class="modal fade"
+      id="modalRegistro"
+      tabindex="-1"
+      aria-labelledby="modalRegistroLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="modal-dialog fuente">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalRegistroLabel">
+              Suscribite a nuestro blog
+            </h5>
+            <button
+              type="button"
+              class="btn-close alert-dismissible"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- formulario  suscripcion -------------------------------------------------------------------------->
+            <div class="signup-form-container">
+              <form role="form" id="register-form" autocomplete="off">
+                <div class="form-header"></div>
+                <div class="form-body">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                      </div>
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Usuario"
+                      />
+                    </div>
+                    <span class="help-block" id="error"></span>
+                  </div>
+                  <br />
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                      </div>
+                      <input
+                        name="email"
+                        type="text"
+                        class="form-control"
+                        required
+                        placeholder="Email"
+                      />
+                    </div>
+                    <span class="help-block" id="error"></span>
+                  </div>
+                  <br />
+                  <div class="row">
+                    <div class="form-group col-lg-6">
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <span class="glyphicon glyphicon-lock"></span>
+                        </div>
+                        <input
+                          name="password"
+                          id="password"
+                          type="password"
+                          class="form-control"
+                          required
+                          placeholder="Contraseña"
+                        />
+                      </div>
+                      <span class="help-block" id="error"></span>
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <span class="glyphicon glyphicon-lock"></span>
+                        </div>
+                        <input
+                          name="cpassword"
+                          type="password"
+                          class="form-control"
+                          required
+                          placeholder="Repetir contraseña"
+                        />
+                      </div>
+                      <span class="help-block" id="error"></span>
+                    </div>
+                  </div>
+                  <br />
+                </div>
+
+                <div class="form-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="submit" class="btn btn-orange">
+                    <span class="glyphicon glyphicon-log-in"></span> Suscribirse
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!---------------------------------------------------------------->
+
+         </div>
+       </div>
+    </div>
+    </div>
+
+    <!-- inicio de footer -->
+       <footer class="container-fluid bg-dark bg-gradient text-secondary">
+      <div class="container pt-2">
+        <div class="box-footer text-sm-center">
+          <div class="row my-2">
+            <div class="col-sm-12 col-md-7 col-lg-2 px-1 text-sm-center p-sm-0">
+              <div class="w-75 mx-auto">
+                <a href="/index.html">
+                  <figure>
+                    <img
+                      src="/img/logo_blog_anime.png"
+                      class="img-fluid logo"
+                      alt="Logo del blog"
+                    />
+                  </figure>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-5 col-lg-3 px-1 text-sm-center p-sm-0">
+              <ul class="list-unstyled">
+                <li class="nav-item"><h6 class="text-light">Navegación</h6></li>
+                <li class="nav-item">
+                  <a
+                    aria-current="page"
+                    class="nav-link link_hover active"
+                    href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/galeria.html"
+                    >Galeria de imagenes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/nosotros.html"
+                    >Acerca de nosotros</a
+                  >
+                </li>
+                <li class="nav-item link_hover">
+                  <a class="nav-link  link_hover"  href="/pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/login.html"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-7 col-lg-4 px-sm-3 pb-2 mt-md-3">
+              <div>
+                <h6
+                  class="text-light text-lg-center mb-3 px-md-5 ps-xs-3 px-lg-0"
+                >
+                  Seguinos en nuestras redes sociales
+                </h6>
+                <div
+                  class="padding-icons display-flex px-lg-0 d-flex flex-row -justify-content-lg-around justify-content-md-around justify-content-sm-around"
+                >
+                  <a
+                    href="https://discord.com/channels/@me"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-discord p-1 mt-1 fs-2"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-facebook p-1 mt-1 fs-2"></i> </a
+                  ><a
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    id="center-instagram"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i
+                      class="justify-content-lg-center fa-brands fa-square-twitter p-1 mt-1 fs-2"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-square-instagram p-1 mt-1 fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-12 col-md-5 col-lg-3 px-1 mt-md-3 mt-lg-0 text-sm-center p-sm-0"
+            >
+              <h6 class="text-light ps-lg-1">Unite</h6>
+              <div
+                class="padding-icons display-flex flex-lg-column d-md-flex flex-md-row justify-content-md-around pt-md-3 d-sm-flex flex-sm-row justify-content-sm-around py-sm-3"
+              >
+                <a target="_blank" href="https://play.google.com/store/apps">
+                  <figure>
+                    <img
+                      src="/img/badge-apple-store.svg"
+                      alt="apple-store"
+                      width="120"
+                      height="auto"
+                    />
+                  </figure>
+                </a>
+                <a target="_blank" href="https://www.apple.com/la/app-store/">
+                  <figure>
+                    <img
+                      src="/img/google-play-badge-bb.svg"
+                      alt="google-play"
+                      width="120"
+                      height="auto"
+                    />
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascrip de bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
